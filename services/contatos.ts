@@ -29,7 +29,7 @@ export const updateContato = async(
 ) => {return await api.put(`/contatos/${id}`,contato);
 };
 
-export const getContatoByid = async (id: string)=>{
+export const getContatoById = async (id: string)=>{
     const response = await api.get<Contato>(`/contatos/${id}`);
     return response.data;
 }
